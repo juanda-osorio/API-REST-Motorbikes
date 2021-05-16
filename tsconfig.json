@@ -1,0 +1,34 @@
+//ARCHIVO SUPER IMPORTANTE PARA QUE SE PUEDA EJECUTAR TYPESCRIPT EN NODJS
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "./dist",
+      "rootDir": "./src"
+    },
+    "lib": ["es2015"]
+  }
+
+  /*
+  Este archivo se puede crear a mano o se puede ejecutar el comando: tsc --init
+  module:
+    Acá especificamos el método de generación de código del módulo, hacemos usos de nodo commonjs
+          
+  esModuleInterop:
+    Con esta opción podemos importar módulos CommonJS de acuerdo con las especificaciones de módulos de ECMAScript 6 (es6).
+    
+  target:
+    Especificamos la versión de JavaScript.
+    
+  moduleResolution:
+    Este es el proceso que usa el compilador para averiguar a qué se refiere una importación, puedes leer más en el siguiente enlace oficial de TypeScript.
+
+  sourceMap:
+    En esta opción activamos o desactivamos la creación de un archivo .map, este archivo permite depurar nuestro proyecto en producción.
+    
+  outDir:
+    Este es el nombre del directorio o carpeta en donde se colocarán los archivos .js que se generan luego de transpilar nuestra aplicación, por ejemplo el nombre del directorio o carpeta se llamara dist.
+*/
